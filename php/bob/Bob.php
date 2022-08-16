@@ -10,6 +10,9 @@ class Bob
 		if ($this->isEmpty($query)) {
 		    $retval = "Fine. Be that way!";
 		}
+		elseif ($this->hasNoLowercase($query) && $this->hasAtLeastOneUppercase($query) && $this->endsWithQuestionMark($query)) {
+			$retval = "Calm down, I know what I'm doing!";
+		}
 		elseif ($this->hasNoLowercase($query) && $this->hasAtLeastOneUppercase($query)) {
 			$retval = "Whoa, chill out!";
 		}
@@ -46,7 +49,7 @@ class Bob
 
     // See http://stackoverflow.com/questions/10054818/convert-accented-characters-to-their-plain-ascii-equivalents
 	public function replaceAccents($str) {
-		$search = explode(",","ç,æ,œ,á,é,í,ó,ú,à,è,ì,ò,ù,ä,ë,ï,ö,ü,ÿ,â,ê,î,ô,û,å,ø,Ø,Å,Á,À,Â,Ä,È,É,Ê,Ë,Í,Î,Ï,Ì,Ò,Ó,Ô,Ö,Ú,Ù,Û,Ü,Ÿ,Ç,Æ,Œ");
+		$search = explode(",","Ã§,Ã¦,Å“,Ã¡,Ã©,Ã­,Ã³,Ãº,Ã ,Ã¨,Ã¬,Ã²,Ã¹,Ã¤,Ã«,Ã¯,Ã¶,Ã¼,Ã¿,Ã¢,Ãª,Ã®,Ã´,Ã»,Ã¥,Ã¸,Ã˜,Ã…,Ã�,Ã€,Ã‚,Ã„,Ãˆ,Ã‰,ÃŠ,Ã‹,Ã�,ÃŽ,Ã�,ÃŒ,Ã’,Ã“,Ã”,Ã–,Ãš,Ã™,Ã›,Ãœ,Å¸,Ã‡,Ã†,Å’");
 		$replace = explode(",","c,ae,oe,a,e,i,o,u,a,e,i,o,u,a,e,i,o,u,y,a,e,i,o,u,a,o,O,A,A,A,A,A,E,E,E,E,I,I,I,I,O,O,O,O,U,U,U,U,Y,C,AE,OE");
 		return str_replace($search, $replace, $str);
 	}
