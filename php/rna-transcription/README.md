@@ -1,6 +1,11 @@
 # Rna Transcription
 
-Write a program that, given a DNA strand, returns its RNA complement (per RNA transcription).
+Welcome to Rna Transcription on Exercism's PHP Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
+Given a DNA strand, return its RNA complement (per RNA transcription).
 
 Both DNA and RNA strands are a sequence of nucleotides.
 
@@ -18,19 +23,17 @@ each nucleotide with its complement:
 * `T` -> `A`
 * `A` -> `U`
 
-## Making the Test Suite Pass
-
-1. Get [PHPUnit].
-
-        % wget --no-check-certificate https://phar.phpunit.de/phpunit.phar
-        % chmod +x phpunit.phar
-
-2. Execute the tests for an assignment.
-
-        % phpunit.phar wordy/wordy_test.php
-
-[PHPUnit]: http://phpunit.de
-
 ## Source
 
-Rosalind [http://rosalind.info/problems/rna](http://rosalind.info/problems/rna)
+### Contributed to by
+
+- @arueckauer
+- @dkinzer
+- @kunicmarko20
+- @kytrinyx
+- @lafent
+- @petemcfarlane
+
+### Based on
+
+Hyperphysics - https://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html
