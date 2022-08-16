@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Determine if a string is a panagram
+ * Determine if a string is a pangram
  * @param string $str
  * @return boolean
  */
