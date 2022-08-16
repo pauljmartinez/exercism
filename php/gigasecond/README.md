@@ -1,22 +1,32 @@
 # Gigasecond
 
-Write a program that will calculate the date that someone turned or will celebrate their 1 Gs anniversary.
+Welcome to Gigasecond on Exercism's PHP Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
 
-A gigasecond is one billion (10**9) seconds.
+## Instructions
 
-## Making the Test Suite Pass
+Given a moment, determine the moment that would be after a gigasecond
+has passed.
 
-1. Get [PHPUnit].
-
-        % wget --no-check-certificate https://phar.phpunit.de/phpunit.phar
-        % chmod +x phpunit.phar
-
-2. Execute the tests for an assignment.
-
-        % phpunit.phar wordy/wordy_test.php
-
-[PHPUnit]: http://phpunit.de
+A gigasecond is 10^9 (1,000,000,000) seconds.
 
 ## Source
 
-Chapter 9 in Chris Pine's online Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=09](http://pine.fm/LearnToProgram/?Chapter=09)
+### Contributed to by
+
+- @arueckauer
+- @dkinzer
+- @Dog
+- @kunicmarko20
+- @kytrinyx
+- @lafent
+- @MatheusNaldi
+- @petemcfarlane
+- @peteraba
+- @TFarla
+- @tstirrat15
+- @zembrowski
+
+### Based on
+
+Chapter 9 in Chris Pine's online Learn to Program tutorial. - https://pine.fm/LearnToProgram/?Chapter=09
